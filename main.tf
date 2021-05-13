@@ -37,7 +37,7 @@ provider "aws" {
 
 
 module "server" {
-  source = "${path.root}server"
+  source = "./server"
 
   ami                    = var.ami
   subnet_id              = var.subnet_id
